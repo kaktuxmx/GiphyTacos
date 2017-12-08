@@ -1,5 +1,6 @@
 // This is the script for my Giphy Tacos
 //test
+  alert("puto");
 
   var foods = ["Korean", "Tacos","Ramen"]
 
@@ -14,13 +15,28 @@
     });.done(function(response) {
 
       var foodDiv = $("<div class='food'>");
+
+      var foodselected = response.selected
+
+      foodDiv.append(foodselected);
+
     });
   };
 
     function renderbuttons() {
       $("#buttons-view").empty();
 
-      for (var i = 0; i < foodDiv.length; i++ ) {
+      for (var i = 0; i < foods.length; i++ ) {
+
+      var f = $("<button>");
+
+      f.addClass("food");
+
+      f.attr("add-food");
+
+      f.text(food[i]);
+
+      $("buttons-view").append(f);
 
       };
     };
