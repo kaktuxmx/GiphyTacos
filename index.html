@@ -5,23 +5,17 @@
     <title>Giphy Tacos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </head>
   <body>
-
-  <div class="container">
-    <div class="food"></div>
-    <div id="buttons-view"></div>
-      <input id="add-food" type="submit" value="newfood">
-
-    <form id="food-form">
-      <label for="food-input">Add your Favorite Food
-      </label>
-        <input type="text" id="food-input">
-        <br>
-    </form>
-    <script type="text/javascript" href="JavaScript/script.js"></script>
-    <h1>El Jorgito esta en mi casa 12/23/17</h1
-  </div>
-
+    <div class="container">
+      <form id="food-form">
+        <label for="food-input">Add your Favorite Food</label>
+          <input type="text" data-food="food-input" id="food-input">
+            <button type="submit" class="btn btn-primary" id="submit">Submit idea!</button>
+      </form>
+    </div>
+    <div id="foodinputsgifs"></div>
+<script type="text/javascript" src="JavaScript/script.js"></script>
   </body>
 </html>
